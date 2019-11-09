@@ -1,9 +1,9 @@
 import React from 'react';
 
-function ScreenItem( { txt, style } ) {
+function ScreenItem( {name, txt, style, counterBtn} ) {
   return (
     <div className="ScreenItem"  style={style}>
-      {txt}
+      <small><i>{name}</i></small><b>{txt}</b>
     </div>
   );
 }

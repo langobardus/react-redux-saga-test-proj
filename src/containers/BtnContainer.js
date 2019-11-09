@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
-import { prsBtn1 } from '../actions'
-import TopPanel from '../components/TopPanel'
+import { prsBtn1, prsBtn2, prsBtn3, prsBtn4 } from '../actions'
 
+import TopPanel from '../components/TopPanel'
 
 const mapStateToProps = (state) => {
   console.log(state);
@@ -12,9 +12,26 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onBtnClick: () => {
-      dispatch(prsBtn1("PRS_BTN1"));
-      console.log(prsBtn1("PRS_BTN1"));
+    onBtnClick: (txt) => {
+      switch (txt) {
+        case 'btn 1':
+            dispatch(prsBtn1(txt));
+            console.log(txt);
+          break;
+        case 'btn 2':
+            dispatch(prsBtn2(txt));
+            console.log(txt);
+          break;
+          case 'btn 3':
+              dispatch(prsBtn3(txt));
+              console.log(txt);
+            break;
+          case 'btn 4':
+              dispatch(prsBtn4(txt));
+              console.log(txt);
+            break;
+        default:
+      }
     }
   }
 }
