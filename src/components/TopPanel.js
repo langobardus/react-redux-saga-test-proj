@@ -1,5 +1,5 @@
 import React from 'react';
-import DashboardBtn from './DashboardBtn';
+import TopPanelBtn from './TopPanelBtn';
 
 function TopPanel({onBtnClick, txt}) {
   let headerStyle={
@@ -11,10 +11,12 @@ function TopPanel({onBtnClick, txt}) {
   };
   return (
     <div className="TopPanel" style={headerStyle}>
-        <DashboardBtn txt="btn 1" onClick={() => onBtnClick("btn 1")} />
-        <DashboardBtn txt="btn 2" onClick={() => onBtnClick("btn 2")} />
-        <DashboardBtn txt="btn 3" onClick={() => onBtnClick("btn 3")} />
-        <DashboardBtn txt="btn 4" onClick={() => onBtnClick("btn 4")} />
+        <TopPanelBtn txt="btn 1" onClick={() => onBtnClick("btn 1")} />
+        <TopPanelBtn txt="btn 2" onClick={() => onBtnClick("btn 2")} />
+        <TopPanelBtn txt="btn 3" onClick={() => onBtnClick("btn 3")} />
+        <TopPanelBtn txt="btn 4" onClick={() => onBtnClick("btn 4")} />
+        <TopPanelBtn txt="btn Dog" onClick={() => onBtnClick("btn Dog")} />
+
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import btns from './btns'
+import btns from './btnsReducer'
+import dogs from './dogsReducer'
 
 const reducApp = combineReducers({
-  btns
-  //...,
-  //...
+  btns,
+  dogs
 })
 
 export default reducApp

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import BtnContainer from '../containers/BtnContainer';
-import {TextContainer1, TextContainer2, TextContainer5, TextContainer6, TextContainer7, TextContainer8} from '../containers/TextContainers';
+import {TextContainer1, TextContainer2, TextContainer3, TextContainer4, TextContainer5, TextContainer6, TextContainer7, TextContainer8} from '../containers/TextContainers';
 import ScreenItem from './ScreenItem';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
       <div className="screen" >
         <div className="ScreenRow">
             <TextContainer1 name="btn pressed: " txt="text X" style={headerStyle}/>
-            <TextContainer2 name="total counter: " txt="text 2" style={headerStyle}/>
-            <ScreenItem txt="text 3" style={headerStyle}/>
-            <ScreenItem txt="text 4" style={headerStyle}/>
+            <TextContainer2  style={headerStyle}/>
+            <TextContainer3 name="btn Dog counter: " txt="text 3" style={headerStyle}/>
+            <TextContainer4 name="total counter: " txt="text 4" style={headerStyle}/>
         </div>
         <div className="ScreenRow">
             <TextContainer5 name="btn1 counter: " txt="text 5" style={headerStyle}/>

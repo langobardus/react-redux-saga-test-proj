@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { prsBtn1, prsBtn2, prsBtn3, prsBtn4 } from '../actions'
+import { prsBtn1, prsBtn2, prsBtn3, prsBtn4, prsBtn5, fetchDog } from '../actions'
 
 import TopPanel from '../components/TopPanel'
 
@@ -30,12 +30,16 @@ const mapDispatchToProps = (dispatch, ownProps) => {
               dispatch(prsBtn4(txt));
               console.log(txt);
             break;
+          case 'btn Dog':
+              dispatch(fetchDog());
+              dispatch(prsBtn5(txt));
+              console.log(txt);
+            break;
         default:
       }
     }
   }
 }
-//console.log(state);
 const BtnContainer = connect(
   mapStateToProps,
   mapDispatchToProps
